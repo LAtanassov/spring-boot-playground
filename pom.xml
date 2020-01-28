@@ -17,6 +17,7 @@
     <properties>
         <io.springfox.version>3.0.0-SNAPSHOT</io.springfox.version>
         <org.projectlombok>1.18.10</org.projectlombok>
+        <jib.maven-plugin-version>1.8.0</jib.maven-plugin-version>
     </properties>
 
     <repositories>
@@ -53,6 +54,8 @@
             <artifactId>h2</artifactId>
             <scope>runtime</scope>
         </dependency>
+
+        <!-- support -->
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -100,6 +103,25 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>com.google.cloud.tools</groupId>
+                <artifactId>jib-maven-plugin</artifactId>
+                <version>${jib.maven-plugin-version}</version>
+                <configuration>
+                    <from>
+                        <image>amazoncorretto:11.0.6</image>
+                    </from>
+                    <container>
+                        <jvmFlags>
+                            <jvmFlag>-Djava.security.egd=file:/dev/./urandom</jvmFlag>
+                        </jvmFlags>
+                        <environment>
+                            <app.name>${project.artifactId}</app.name>
+                            <app.version>${project.version}</app.version>
+                        </environment>
+                    </container>
+                </configuration>
             </plugin>
         </plugins>
     </build>

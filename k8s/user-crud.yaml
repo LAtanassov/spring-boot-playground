@@ -1,0 +1,31 @@
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: user-crud-service
+spec:
+  ports:
+    - port: 8080
+      name: http
+  type: NodePort
+  selector:
+    app: user-crud-backend
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: user-crud-backend
+spec:
+  selector:
+    matchLabels:
+      app: user-crud-backend
+  template:
+    metadata:
+      labels:
+        app: user-crud-backend
+    spec:
+      containers:
+        - name: user-crud-backend
+          image: user-crud
+          ports:
+            - containerPort: 8080
