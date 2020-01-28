@@ -1,6 +1,6 @@
 package dev.latanassov.animals;
 
-import dev.latanassov.users.User;
+import dev.latanassov.customers.Customer;
 import lombok.*;
 
 import javax.persistence.*;
@@ -15,10 +15,12 @@ import javax.persistence.*;
 public class Animal {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     private String name;
 
     @OneToOne
-    private User owner;
+    private Customer owner;
+
+    private Gender gender;
 }

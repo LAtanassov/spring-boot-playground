@@ -1,0 +1,17 @@
+
+spring:
+
+  hikari:
+    connectionTimeout: 20000
+    maximumPoolSize: 5
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/user-crud
+    username: postgres
+    password: password
+
+  jpa:
+    show-sql: true
+
+    hibernate:
+      ddl-auto: validate

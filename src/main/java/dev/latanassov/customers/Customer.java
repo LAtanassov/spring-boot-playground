@@ -1,4 +1,4 @@
-package dev.latanassov.users;
+package dev.latanassov.customers;
 
 
 import dev.latanassov.animals.Animal;
@@ -15,10 +15,10 @@ import java.util.Set;
 @Getter
 @EqualsAndHashCode
 @ToString
-public class User {
+public class Customer {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
     @Email @Column(unique = true)
