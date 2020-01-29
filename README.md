@@ -1,6 +1,8 @@
 # Spring Boot Playground
 
-already tried:
+using [Spring Boot 2.2.4-RELEASE](https://docs.spring.io/spring-boot/docs/2.2.4.RELEASE/reference/html/)
+
+already tried experiments:
 * [Flyway](https://flywaydb.org/) for database schema versioning
 * [Amazon Corretto JDK 11](https://aws.amazon.com/corretto/)
 * [SpringFox](https://springfox.github.io/springfox/)  for swagger support
