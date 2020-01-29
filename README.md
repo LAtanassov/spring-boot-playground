@@ -1,4 +1,4 @@
-# User Crud - Spring Boot Playground
+# Spring Boot Playground
 
 already tried:
 * [Flyway](https://flywaydb.org/) for database schema versioning
