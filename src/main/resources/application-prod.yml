@@ -1,0 +1,11 @@
+
+spring:
+
+  hikari:
+    connectionTimeout: 20000
+    maximumPoolSize: 5
+
+  jpa:
+
+    hibernate:
+      ddl-auto: validate
