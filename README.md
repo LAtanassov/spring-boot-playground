@@ -12,6 +12,7 @@ already tried experiments:
 
 ongoing experiments:
 * local development of [AWS ECS](https://aws.amazon.com/ecs/) using this [guide](https://aws.amazon.com/blogs/compute/a-guide-to-locally-testing-containers-with-amazon-ecs-local-endpoints-and-docker-compose/)
+* Spring Boot DevTools without Spring and Maven Profile (DEV != PROD image)
 
 ## Database Schema Versioning with Flyway
 
