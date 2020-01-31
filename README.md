@@ -8,7 +8,7 @@ already tried experiments:
 * [SpringFox](https://springfox.github.io/springfox/)  for swagger support
 * [Project Lombox](https://projectlombok.org/) to reduce boilerplate code
 * [Cloud Code](https://cloud.google.com/code/docs/intellij/quickstart-IDEA), [Skaffold](https://skaffold.dev/) and [Jib](https://github.com/GoogleContainerTools/jib) for continuous k8s development
-* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/2.2.4.RELEASE/reference/html/using-spring-boot.html#using-boot-devtools) for continuous development in Docker
+* [Spring Boot DevTools](https://docs.spring.io/spring-boot/docs/2.2.4.RELEASE/reference/html/using-spring-boot.html#using-boot-devtools) for continuous development locally or in Docker
 
 ongoing experiments:
 * [ECS Local Container Endpoints](https://github.com/awslabs/amazon-ecs-local-container-endpoints) for [AWS ECS](https://aws.amazon.com/ecs/) using this [guide](https://aws.amazon.com/blogs/compute/a-guide-to-locally-testing-containers-with-amazon-ecs-local-endpoints-and-docker-compose/)
