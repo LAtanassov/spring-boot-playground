@@ -20,29 +20,6 @@
         <jib.maven-plugin-version>1.8.0</jib.maven-plugin-version>
     </properties>
 
-    <profiles>
-
-        <profile>
-            <id>prod</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <exclude.devtools>true</exclude.devtools>
-                <spring.profiles.active>prod</spring.profiles.active>
-            </properties>
-        </profile>
-
-        <profile>
-            <id>dev</id>
-            <properties>
-                <exclude.devtools>false</exclude.devtools>
-                <spring.profiles.active>dev</spring.profiles.active>
-            </properties>
-        </profile>
-
-    </profiles>
-
     <repositories>
         <repository>
             <id>jcenter-snapshots</id>
@@ -110,7 +87,6 @@
             <version>${io.springfox.version}</version>
         </dependency>
 
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
@@ -142,7 +118,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <excludeDevtools>${exclude.devtools}</excludeDevtools>
+                    <excludeDevtools>false</excludeDevtools>
                 </configuration>
             </plugin>
             <plugin>
