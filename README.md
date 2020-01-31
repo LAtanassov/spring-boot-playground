@@ -16,11 +16,14 @@ ongoing experiments:
 
 ## Database Schema Versioning with Flyway
 
-TODO
+**Situation**: Your workload uses a RDBMS and need database schema versioning.
+**Solution**: Generate/Validate your database schema using JPA/Hibernate. Use Flyway to version your database schema. 
+If you need highly optimized stored procedures add them to your database schema and call them with Spring Boot Data.  
+**Security**: Separation of Duties: Flyway user needs rights to execute DDL, DCL; Service user needs rights to execute DML, TCL;  
 
 ## Continuous k8s Development with Cloud Code
  
-**Situation**: Your workload runs in (managed) k8s in the cloud, you develop on your workstation. how to test the  integration?
+**Situation**: Your workload runs in (managed) k8s in the cloud, you develop on your workstation. how to test the  integration?  
 **Solution**: Continuous Development with Cloud Code, directly into your local minikube or Cloud k8s.
 
 Install the Cloud Code Plugin for Intellij, Eclipse, VS Code and follow the instruction or run Skaffold in your command line.
