@@ -20,7 +20,10 @@ TODO
 
 ## Continuous k8s Development with Cloud Code
  
- TODO
+**Situation**: Your workload runs in (managed) k8s in the cloud, you develop on your workstation. how to test the  integration?
+**Solution**: Continuous Development with Cloud Code, directly into your local minikube or Cloud k8s.
+
+Install the Cloud Code Plugin for Intellij, Eclipse, VS Code and follow the instruction or run Skaffold in your command line.
 
 ## Continuous Development with Spring Boot DevTools Remote in Docker
 
