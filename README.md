@@ -15,7 +15,7 @@ ongoing experiments:
 
 ## Database Schema Versioning with Flyway
 
-**Situation**: Your workload uses a RDBMS and need database schema versioning.
+**Situation**: Your workload uses a RDBMS and need database schema versioning.  
 **Solution**: Generate/Validate your database schema using JPA/Hibernate. Use Flyway to version your database schema. 
 If you need highly optimized stored procedures add them to your database schema and call them with Spring Boot Data.  
 **Security**: Separation of Duties: Flyway user needs rights to execute DDL, DCL; Service user needs rights to execute DML, TCL;  
