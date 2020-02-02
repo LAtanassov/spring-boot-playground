@@ -18,7 +18,7 @@ ongoing experiments:
 **Situation**: Your workload uses a RDBMS and need database schema versioning.  
 **Solution**: Generate/Validate your database schema using JPA/Hibernate. Use Flyway to version your database schema. 
 If you need highly optimized stored procedures add them to your database schema and call them with Spring Boot Data.  
-**Security**: Separation of Duties: Flyway user needs rights to execute DDL, DCL; Service user needs rights to execute DML, TCL;  
+**Security**: Separation of Duties can be achieved by another main class. FlywayMigrationApplication started with an user that has database rights to execute DDL, DCL to migrate and validate database schema. The Application can be started with disabled Flyway and a user that only has database rights to execute DML, TCL.  
 
 ## Continuous k8s Development with Cloud Code
  
